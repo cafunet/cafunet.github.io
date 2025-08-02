@@ -1,14 +1,58 @@
-.estilo-lindo{
-    background-color: #4caf50; /* color de fondo del boton */
-    color: antiquewhite; /* color del texto */
-    padding: 12px 24px; /* espacio interno del boton para ambas direcciones */
-    border: none; /* sin borde */
-    border-radius: 8px; /* esquinas redondeadas */
-    font-size: 16px; /* tamaño de la letra */
-    cursor: pointer; /* cambia el cursor al pasar por encima */
-    transition: background-color 0.3s; /* transición suave al cambiar el color de fondo */
-}
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
 
-.estilo-lindo:hover {
-    background-color: #45a049; /* color de fondo al pasar el mouse */
-}
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    p.title {
+      font-size: 18px;
+      color: #666;
+      margin-top: 0;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contacto p, .contacto a {
+      margin: 5px 0;
+    }
+
+    .tag {
+      background: #3498db;
+      color: #fff;
+      padding: 3px 8px;
+      margin: 4px 4px 4px 0;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
