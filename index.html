@@ -2,82 +2,160 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/carpeta.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida</title>
+
+  <!-- *******************************************+ -->
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- estilos -->
   <link rel="stylesheet" href="style.css">
-  <title>Hoja de Vida - Cafu</title>
 </head>
 
 <body>
 
+  <div class="container-lg">
+    <div class="row shadow-lg rounded-4 overflow-hidden">
+      <!-- Columna Izuierda -->
+      <div class="col-md-4 bg-primary text-white p-4">
+        <header class="text-center mb-1">
+          <img src="img/pepeLuis.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3"
+            alt="Foto de perfil">
 
-  <div class="container">
+          <h1 class="fw-bold mb-1">Juan Felipe Quintero Neuto</h1>
+          <h2 class="h5">Desarrollador junior</h2>
+        </header>
+        <!-- Contacto -->
+        <section class="mb-4">
+          <h5 class="fw-bold">
+            <i class="fa-solid fa-address-card mb-3 me-3"></i>
+            Contacto
+          </h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="https://wa.me/573136850577?text=Hola%20te%20voy%20a%20contratar%20ya" class="text-white"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp me-2"></i>
+                +57 3505294709
+              </a>
+            </li>
+            <li class="mb-2 print">
+              <i class="fas fa-envelope me-2"></i>
+              juan.quintero44753@ucaldas.edu.co
+            </li>
+            <li class="mb-2">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              Manizales, Caldas
+            </li>
+            <li class="mb-2">
 
-    <div class="container-lg">
-      <div class="row shadow-lg rounded-4 overflow-hidden">
-        <div class="col-md-4 bg-primary text-white p-4">
-          <img src="img/pepeLuis.jpg" alt="perfil" class="perfil">
-        </div>
+              <a href="..." target="_blank" class="text-white">
+                <i class="fab fa-linkedin me-2"></i>
+                linkedin.com/juanquintero
+              </a>
+            </li>
+            <li class="mb-2 print">
+              <a href="https://github.com/cafunet" target="_blank" class="text-white">
+                <i class="fab fa-github me-2"></i>
+                github.com/cafunet
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- Habilidades -->
+        <hr>
+        <section class="mb-2">
+          <h5 class="fw-bold">
+            <i class="fas fa-code me-2"></i>
+            Habilidades
+          </h5>
+          <div class="skill mb-1">
+            <div class="d-flex justify-content-between">
+              <span>INGLES</span>
+              <span>30%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill mb-1">
+            <div class="d-flex justify-content-between">
+              <span>PYTHON</span>
+              <span>30%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill mb-1">
+            <div class="d-flex justify-content-between">
+              <span>HTML/CSS</span>
+              <span>50%</span>
+            </div>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+          </div>
+        </section>
       </div>
+      <!-- columna derecha -->
+      <div class="col-md-8">
+        <section>
+          <h2>Perfil Profesional</h2>
+          <p>Estudiante comprometido de Ingeniería en Informática, con habilidades en desarrollo web,
+            bases de datos y resolución de problemas técnicos. Apasionado por la tecnología, el aprendizaje
+            continuo y el trabajo en equipo.</p>
+        </section>
+
+        <section>
+          <h2>Experiencia</h2>
+          <ul>
+            <li>
+              <strong>Auxiliar de Soporte Técnico</strong> – Empresa X (2024)
+              <br>Soporte a usuarios, mantenimiento de equipos, documentación de incidencias.
+            </li>
+            <li>
+              <strong>Proyecto académico:</strong> Sistema de rutas espaciales en PostgreSQL
+              <br>Diseño de base de datos, funciones recursivas, optimización de rutas con restricciones.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Educación</h2>
+          <ul>
+            <li>
+              <strong>Ingeniería en Informática</strong> – Universidad ABC (en curso)
+              <br>2021 - Actualidad
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Habilidades</h2>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Python</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">Soporte técnico</span>
+          <span class="tag">Trabajo en equipo</span>
+        </section>
+      </div>
+
+
     </div>
 
-
-    <h1>Juan Felipe Quintero Neuto</h1>
-    <p class="title">Estudiante de Ingeniería en Informática <br>Asesor telefonico</p>
-
-
-    <section class="contacto">
-      <h2>Contacto</h2>
-      <p>Email: juanpaco30@hotmail.com</p>
-      <p>Teléfono: +57 350 529 4709</p>
-      <p>Ubicación: Manizales, Villamaria - Caldas</p>
-      <p>GitHub: <a href="https://github.com/cafunet" target="_blank">github.com/cafunet</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
-    </section>
-
-    <section>
-      <h2>Perfil Profesional</h2>
-      <p>Estudiante comprometido de Ingeniería en Informática, con habilidades en desarrollo web,
-        bases de datos y resolución de problemas técnicos. Apasionado por la tecnología, el aprendizaje
-        continuo y el trabajo en equipo.</p>
-    </section>
-
-    <section>
-      <h2>Experiencia</h2>
-      <ul>
-        <li>
-          <strong>Auxiliar de Soporte Técnico</strong> – Empresa X (2024)
-          <br>Soporte a usuarios, mantenimiento de equipos, documentación de incidencias.
-        </li>
-        <li>
-          <strong>Proyecto académico:</strong> Sistema de rutas espaciales en PostgreSQL
-          <br>Diseño de base de datos, funciones recursivas, optimización de rutas con restricciones.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Educación</h2>
-      <ul>
-        <li>
-          <strong>Ingeniería en Informática</strong> – Universidad ABC (en curso)
-          <br>2021 - Actualidad
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Habilidades</h2>
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">Python</span>
-      <span class="tag">PostgreSQL</span>
-      <span class="tag">Git & GitHub</span>
-      <span class="tag">Soporte técnico</span>
-      <span class="tag">Trabajo en equipo</span>
-    </section>
   </div>
+
 </body>
 
 </html>
